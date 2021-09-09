@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Ingreso de Productos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form  action="/api/productos" method="POST">      
+        <h2 class="feedback-input">Formulario de Ingreso de Productos</h2>
+        <input name="title" type="text" class="feedback-input" placeholder="Title" />   
+        <input name="price" type="text" class="feedback-input" placeholder="Price" />
+        <input name="thumbnail" type="text" class="feedback-input" placeholder="Thumbnail" />
+        <input type="submit" value="Guardar un Producto"/>
+    </form>
+    <form action="/api/productos" method="get">
+        <input type="submit" value="Buscar todos los Productos!"/>
+    </form>
+</body>
+</html>
