@@ -1,0 +1,22 @@
+extends layout/index.pug
+
+block main
+ <div class="container mt-3">
+        h1='Productos'
+        if countProductos
+                table(class="table table-dark table-striped")
+                    tr
+                        th='Nombre'
+                        th='Precio'
+                        th='Foto'
+                        each producto in productos
+                            tr
+                                td=producto.title
+                                td=producto.price
+                                td
+                                    img(width="80" src=producto.thumbnail alt="not found")
+        else
+            h3='La lista de los productos esta vacia'
+
+        a(href="/" type="button" class="btn btn-dark"): i.fa.fa-plus  Productos
+

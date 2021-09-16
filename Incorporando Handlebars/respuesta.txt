@@ -1,0 +1,16 @@
+Consigna:
+Por escrito, indicar cuál de los tres motores de plantillas prefieres para tu proyecto y por qué
+
+Respuesta:
+   De los 3 motores de plantillas honestamente no usaría ninguno, ahora bien explico por qué, 
+   dada la experiencia que poseo en React y Python/Django y teniendo en cuenta que este último incluye    
+   por defautl un motor de templates basado en jinja2 puedo decir que el desarrollo con templates     
+   no es del todo cómodo vs el desarrollo de FE modernos con tecnologías como React por ejemplo, 
+   siempre me inclinaría por este último salvo que imperativamente se requiera usar un motor de templates
+   integrado a node/express en ese caso y solamente en ese caso usaría EJS , este utlimo  me pareció muy similar
+   a jinja2 de Django el cual conozco bastante (me refiero a los templates tags) y la curva de aprendizaje de EJS 
+   para un proyecto real sería menor.    
+Ahora bien, analizando EJS de forma objetiva, de acuerdo a lo visto y lo que pude indagar en internet,
+el modulo es muy liviano vs los otros motores, posee más 10 años de madurez, un setup simple,
+soporte de partial que me pareció interesante en cuanto a la reutilización de código y es unos de los más 
+usados por la comunidad.
