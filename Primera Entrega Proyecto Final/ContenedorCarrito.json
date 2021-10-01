@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "timestamp": 1633043345070,
+    "productos": [
+      {
+        "id": 1,
+        "title": "Escuadra",
+        "price": 323,
+        "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-256.png",
+        "description": "Esto es una descripcion",
+        "codigo": 456,
+        "stock": 12
+      },
+      {
+        "id": 3,
+        "title": "Escuadra",
+        "price": 323,
+        "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-256.png",
+        "description": "Esto es una descripcion",
+        "codigo": 456,
+        "stock": 12
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "timestamp": 1633043399224,
+    "productos": []
+  },
+  {
+    "id": 3,
+    "timestamp": 1633045085902,
+    "productos": []
+  }
+]
