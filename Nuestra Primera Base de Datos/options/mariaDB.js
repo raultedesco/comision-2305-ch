@@ -3,7 +3,7 @@ export const options_mariadb = {
     connection: {
       host: 'localhost',
       user: 'root',
-      password: 'spurs200',
+      password: 'password',
       database: 'mibase'
     }
   }
