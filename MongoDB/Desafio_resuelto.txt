@@ -1,0 +1,256 @@
+> db.createCollection("mensajes")
+{ "ok" : 1 }
+> db.createCollection("productos")
+{ "ok" : 1 }
+> show collections
+
+db.productos.insertMany([{
+  title: 'Ruler',
+  price: 120,
+  thumbnail: 'https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-256.png'
+},
+{
+  title: 'Phone',
+  price: 580,
+  thumbnail: 'https://cdn2.iconfinder.com/data/icons/free-simple-line-mix/48/11-Smartphone-128.png'
+},
+{
+  title: 'Diskette',
+  price: 900,
+  thumbnail: 'https://cdn2.iconfinder.com/data/icons/logos-brands-4/24/logo_brand_brands_logos_total_commander-128.png'
+},
+{
+  title: 'Office',
+  price: 1280,
+  thumbnail: 'https://cdn2.iconfinder.com/data/icons/logos-brands-4/24/logo_brand_brands_logos_word-128.png'
+},
+{
+  title: 'Photoshop',
+  price: 1700,
+  thumbnail: 'https://cdn2.iconfinder.com/data/icons/logos-brands-4/24/logo_brand_brands_logos_adobe_illustrator-128.png'
+},
+{
+  title: 'Mac',
+  price: 2300,
+  thumbnail: 'https://cdn2.iconfinder.com/data/icons/logos-brands-4/24/Apple-128.png'
+},
+{
+  title: 'Computer',
+  price: 2860,
+  thumbnail: 'https://cdn2.iconfinder.com/data/icons/free-simple-line-mix/48/40-Web_Development-128.png'
+},
+{
+  title: 'Bitcoins',
+  price: 3350,
+  thumbnail: 'https://cdn2.iconfinder.com/data/icons/free-simple-line-mix/48/24-Bitcoin-Process-128.png'
+},
+{
+  title: 'Firewall',
+  price: 4320,
+  thumbnail: 'https://cdn2.iconfinder.com/data/icons/free-simple-line-mix/48/13-Wall-128.png'
+},
+{
+  title: 'VLC',
+  price: 4990,
+  thumbnail: 'https://cdn2.iconfinder.com/data/icons/logos-brands-4/24/logo_brand_brands_logos_vlc_media_player-128.png'
+}])
+
+
+db.mensajes.insertMany([{
+  autor: 'mimail1@gmail.com',
+  texto: 'texto1',
+},
+{
+  autor: 'mimail2@gmail.com',
+  texto: 'texto2',
+},
+{
+  autor: 'mimail3@gmail.com',
+  texto: 'texto3',
+},
+{
+  autor: 'mimail4@gmail.com',
+  texto: 'texto4',
+},
+{
+  autor: 'mimail5@gmail.com',
+  texto: 'texto5',
+},
+{
+  autor: 'mimail6@gmail.com',
+  texto: 'texto6',
+},
+{
+  autor: 'mimail7@gmail.com',
+  texto: 'texto7',
+},
+{
+  autor: 'mimail8@gmail.com',
+  texto: 'texto8',
+},
+{
+  autor: 'mimail9@gmail.com',
+  texto: 'texto9',
+},
+{
+  autor: 'mimail10@gmail.com',
+  texto: 'texto10',
+}])
+
+
+> db.mensajes.find({})
+{ "_id" : ObjectId("616b483985f532fc0f7e510a"), "autor" : "mimail1@gmail.com", "texto" : "texto1" }
+{ "_id" : ObjectId("616b483985f532fc0f7e510b"), "autor" : "mimail2@gmail.com", "texto" : "texto2" }
+{ "_id" : ObjectId("616b483985f532fc0f7e510c"), "autor" : "mimail3@gmail.com", "texto" : "texto3" }
+{ "_id" : ObjectId("616b483985f532fc0f7e510d"), "autor" : "mimail4@gmail.com", "texto" : "texto4" }
+{ "_id" : ObjectId("616b483985f532fc0f7e510e"), "autor" : "mimail5@gmail.com", "texto" : "texto5" }
+{ "_id" : ObjectId("616b483985f532fc0f7e510f"), "autor" : "mimail6@gmail.com", "texto" : "texto6" }
+{ "_id" : ObjectId("616b483985f532fc0f7e5110"), "autor" : "mimail7@gmail.com", "texto" : "texto7" }
+{ "_id" : ObjectId("616b483985f532fc0f7e5111"), "autor" : "mimail8@gmail.com", "texto" : "texto8" }
+{ "_id" : ObjectId("616b483985f532fc0f7e5112"), "autor" : "mimail9@gmail.com", "texto" : "texto9" }
+{ "_id" : ObjectId("616b483985f532fc0f7e5113"), "autor" : "mimail10@gmail.com", "texto" : "texto10" }
+> db.productos.find({})
+{ "_id" : ObjectId("616b484c85f532fc0f7e5114"), "title" : "Ruler", "price" : "120", "thumbnail" : "https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-256.png" }
+{ "_id" : ObjectId("616b484c85f532fc0f7e5115"), "title" : "Phone", "price" : "580", "thumbnail" : "https://cdn2.iconfinder.com/data/icons/free-simple-line-mix/48/11-Smartphone-128.png" }
+{ "_id" : ObjectId("616b484c85f532fc0f7e5116"), "title" : "Diskette", "price" : "900", "thumbnail" : "https://cdn2.iconfinder.com/data/icons/logos-brands-4/24/logo_brand_brands_logos_total_commander-128.png" }
+{ "_id" : ObjectId("616b484c85f532fc0f7e5117"), "title" : "Office", "price" : "1280", "thumbnail" : "https://cdn2.iconfinder.com/data/icons/logos-brands-4/24/logo_brand_brands_logos_word-128.png" }
+{ "_id" : ObjectId("616b484c85f532fc0f7e5118"), "title" : "Photoshop", "price" : "1700", "thumbnail" : "https://cdn2.iconfinder.com/data/icons/logos-brands-4/24/logo_brand_brands_logos_adobe_illustrator-128.png" }
+{ "_id" : ObjectId("616b484c85f532fc0f7e5119"), "title" : "Mac", "price" : "2300", "thumbnail" : "https://cdn2.iconfinder.com/data/icons/logos-brands-4/24/Apple-128.png" }
+{ "_id" : ObjectId("616b484c85f532fc0f7e511a"), "title" : "Computer", "price" : "2860", "thumbnail" : "https://cdn2.iconfinder.com/data/icons/free-simple-line-mix/48/40-Web_Development-128.png" }
+{ "_id" : ObjectId("616b484c85f532fc0f7e511b"), "title" : "Bitcoins", "price" : "3350", "thumbnail" : "https://cdn2.iconfinder.com/data/icons/free-simple-line-mix/48/24-Bitcoin-Process-128.png" }
+{ "_id" : ObjectId("616b484c85f532fc0f7e511c"), "title" : "Firewall", "price" : "4320", "thumbnail" : "https://cdn2.iconfinder.com/data/icons/free-simple-line-mix/48/13-Wall-128.png" }
+{ "_id" : ObjectId("616b484c85f532fc0f7e511d"), "title" : "VLC", "price" : "4990", "thumbnail" : "https://cdn2.iconfinder.com/data/icons/logos-brands-4/24/logo_brand_brands_logos_vlc_media_player-128.png" }
+
+#Cantidad de Documentos por collections
+
+> db.mensajes.count()
+10
+> db.productos.count()
+10
+
+#Agregar un producto +
+
+db.productos.insertOne({
+  title: 'Ubuntu',
+  price: '100',
+  thumbnail: 'https://cdn2.iconfinder.com/data/icons/logos-brands-4/24/logo_brand_brands_logos_vlc_media_player-128.png'
+})
+
+#Listar productos con precio menor a 1000
+> db.productos.find({price:{$lt:1000}})
+{ "_id" : ObjectId("616b52d3ecbb8c9e02aafa55"), "title" : "Ruler", "price" : 120, "thumbnail" : "https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-256.png" }
+{ "_id" : ObjectId("616b52d3ecbb8c9e02aafa56"), "title" : "Phone", "price" : 580, "thumbnail" : "https://cdn2.iconfinder.com/data/icons/free-simple-line-mix/48/11-Smartphone-128.png" }
+{ "_id" : ObjectId("616b52d3ecbb8c9e02aafa57"), "title" : "Diskette", "price" : 900, "thumbnail" : "https://cdn2.iconfinder.com/data/icons/logos-brands-4/24/logo_brand_brands_logos_total_commander-128.png" }
+
+#Listar los productos con precio entre los 1000 a 3000 pesos.
+> db.productos.find({price:{$gt:1000,$lt:3000}})
+{ "_id" : ObjectId("616b52d3ecbb8c9e02aafa58"), "title" : "Office", "price" : 1280, "thumbnail" : "https://cdn2.iconfinder.com/data/icons/logos-brands-4/24/logo_brand_brands_logos_word-128.png" }
+{ "_id" : ObjectId("616b52d3ecbb8c9e02aafa59"), "title" : "Photoshop", "price" : 1700, "thumbnail" : "https://cdn2.iconfinder.com/data/icons/logos-brands-4/24/logo_brand_brands_logos_adobe_illustrator-128.png" }
+{ "_id" : ObjectId("616b52d3ecbb8c9e02aafa5a"), "title" : "Mac", "price" : 2300, "thumbnail" : "https://cdn2.iconfinder.com/data/icons/logos-brands-4/24/Apple-128.png" }
+{ "_id" : ObjectId("616b52d3ecbb8c9e02aafa5b"), "title" : "Computer", "price" : 2860, "thumbnail" : "https://cdn2.iconfinder.com/data/icons/free-simple-line-mix/48/40-Web_Development-128.png" }
+
+#Listar los productos con precio mayor a 3000 pesos.
+> db.productos.find({price:{$gt:3000}})
+{ "_id" : ObjectId("616b52d3ecbb8c9e02aafa5c"), "title" : "Bitcoins", "price" : 3350, "thumbnail" : "https://cdn2.iconfinder.com/data/icons/free-simple-line-mix/48/24-Bitcoin-Process-128.png" }
+{ "_id" : ObjectId("616b52d3ecbb8c9e02aafa5d"), "title" : "Firewall", "price" : 4320, "thumbnail" : "https://cdn2.iconfinder.com/data/icons/free-simple-line-mix/48/13-Wall-128.png" }
+{ "_id" : ObjectId("616b52d3ecbb8c9e02aafa5e"), "title" : "VLC", "price" : 4990, "thumbnail" : "https://cdn2.iconfinder.com/data/icons/logos-brands-4/24/logo_brand_brands_logos_vlc_media_player-128.png" }
+
+#Realizar una consulta que traiga sólo el nombre del tercer producto más barato.
+db.productos.find().sort({price: 1}).skip(2).limit(1)
+{ "_id" : ObjectId("616b52d3ecbb8c9e02aafa57"), "title" : "Diskette", "price" : 900, "thumbnail" : "https://cdn2.iconfinder.com/data/icons/logos-brands-4/24/logo_brand_brands_logos_total_commander-128.png" }
+
+#Hacer una actualización sobre todos los productos, agregando el campo stock a todos ellos con un valor de 100
+> db.productos.updateMany({},{$set:{stock:100}})
+{ "acknowledged" : true, "matchedCount" : 10, "modifiedCount" : 10 }
+
+> db.productos.find({})
+{ "_id" : ObjectId("616b52d3ecbb8c9e02aafa55"), "title" : "Ruler", "price" : 120, "thumbnail" : "https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-256.png", "stock" : 100 }
+{ "_id" : ObjectId("616b52d3ecbb8c9e02aafa56"), "title" : "Phone", "price" : 580, "thumbnail" : "https://cdn2.iconfinder.com/data/icons/free-simple-line-mix/48/11-Smartphone-128.png", "stock" : 100 }
+{ "_id" : ObjectId("616b52d3ecbb8c9e02aafa57"), "title" : "Diskette", "price" : 900, "thumbnail" : "https://cdn2.iconfinder.com/data/icons/logos-brands-4/24/logo_brand_brands_logos_total_commander-128.png", "stock" : 100 }
+{ "_id" : ObjectId("616b52d3ecbb8c9e02aafa58"), "title" : "Office", "price" : 1280, "thumbnail" : "https://cdn2.iconfinder.com/data/icons/logos-brands-4/24/logo_brand_brands_logos_word-128.png", "stock" : 100 }
+{ "_id" : ObjectId("616b52d3ecbb8c9e02aafa59"), "title" : "Photoshop", "price" : 1700, "thumbnail" : "https://cdn2.iconfinder.com/data/icons/logos-brands-4/24/logo_brand_brands_logos_adobe_illustrator-128.png", "stock" : 100 }
+{ "_id" : ObjectId("616b52d3ecbb8c9e02aafa5a"), "title" : "Mac", "price" : 2300, "thumbnail" : "https://cdn2.iconfinder.com/data/icons/logos-brands-4/24/Apple-128.png", "stock" : 100 }
+{ "_id" : ObjectId("616b52d3ecbb8c9e02aafa5b"), "title" : "Computer", "price" : 2860, "thumbnail" : "https://cdn2.iconfinder.com/data/icons/free-simple-line-mix/48/40-Web_Development-128.png", "stock" : 100 }
+{ "_id" : ObjectId("616b52d3ecbb8c9e02aafa5c"), "title" : "Bitcoins", "price" : 3350, "thumbnail" : "https://cdn2.iconfinder.com/data/icons/free-simple-line-mix/48/24-Bitcoin-Process-128.png", "stock" : 100 }
+{ "_id" : ObjectId("616b52d3ecbb8c9e02aafa5d"), "title" : "Firewall", "price" : 4320, "thumbnail" : "https://cdn2.iconfinder.com/data/icons/free-simple-line-mix/48/13-Wall-128.png", "stock" : 100 }
+{ "_id" : ObjectId("616b52d3ecbb8c9e02aafa5e"), "title" : "VLC", "price" : 4990, "thumbnail" : "https://cdn2.iconfinder.com/data/icons/logos-brands-4/24/logo_brand_brands_logos_vlc_media_player-128.png", "stock" : 100 }
+
+#Cambiar el stock a cero de los productos con precios mayores a 4000 pesos. 
+db.productos.updateMany({price:{$gt:4000}},{$set:{stock:0}})
+{ "acknowledged" : true, "matchedCount" : 2, "modifiedCount" : 2 }
+
+> db.productos.find({})
+{ "_id" : ObjectId("616b52d3ecbb8c9e02aafa55"), "title" : "Ruler", "price" : 120, "thumbnail" : "https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-256.png", "stock" : 100 }
+{ "_id" : ObjectId("616b52d3ecbb8c9e02aafa56"), "title" : "Phone", "price" : 580, "thumbnail" : "https://cdn2.iconfinder.com/data/icons/free-simple-line-mix/48/11-Smartphone-128.png", "stock" : 100 }
+{ "_id" : ObjectId("616b52d3ecbb8c9e02aafa57"), "title" : "Diskette", "price" : 900, "thumbnail" : "https://cdn2.iconfinder.com/data/icons/logos-brands-4/24/logo_brand_brands_logos_total_commander-128.png", "stock" : 100 }
+{ "_id" : ObjectId("616b52d3ecbb8c9e02aafa58"), "title" : "Office", "price" : 1280, "thumbnail" : "https://cdn2.iconfinder.com/data/icons/logos-brands-4/24/logo_brand_brands_logos_word-128.png", "stock" : 100 }
+{ "_id" : ObjectId("616b52d3ecbb8c9e02aafa59"), "title" : "Photoshop", "price" : 1700, "thumbnail" : "https://cdn2.iconfinder.com/data/icons/logos-brands-4/24/logo_brand_brands_logos_adobe_illustrator-128.png", "stock" : 100 }
+{ "_id" : ObjectId("616b52d3ecbb8c9e02aafa5a"), "title" : "Mac", "price" : 2300, "thumbnail" : "https://cdn2.iconfinder.com/data/icons/logos-brands-4/24/Apple-128.png", "stock" : 100 }
+{ "_id" : ObjectId("616b52d3ecbb8c9e02aafa5b"), "title" : "Computer", "price" : 2860, "thumbnail" : "https://cdn2.iconfinder.com/data/icons/free-simple-line-mix/48/40-Web_Development-128.png", "stock" : 100 }
+{ "_id" : ObjectId("616b52d3ecbb8c9e02aafa5c"), "title" : "Bitcoins", "price" : 3350, "thumbnail" : "https://cdn2.iconfinder.com/data/icons/free-simple-line-mix/48/24-Bitcoin-Process-128.png", "stock" : 100 }
+{ "_id" : ObjectId("616b52d3ecbb8c9e02aafa5d"), "title" : "Firewall", "price" : 4320, "thumbnail" : "https://cdn2.iconfinder.com/data/icons/free-simple-line-mix/48/13-Wall-128.png", "stock" : 0 }
+{ "_id" : ObjectId("616b52d3ecbb8c9e02aafa5e"), "title" : "VLC", "price" : 4990, "thumbnail" : "https://cdn2.iconfinder.com/data/icons/logos-brands-4/24/logo_brand_brands_logos_vlc_media_player-128.png", "stock" : 0 }
+
+#Borrar los productos con precio menor a 1000 pesos 
+> db.productos.deleteMany({price:{$lt:1000}})
+{ "acknowledged" : true, "deletedCount" : 3 }
+
+> db.productos.find({})
+{ "_id" : ObjectId("616b52d3ecbb8c9e02aafa58"), "title" : "Office", "price" : 1280, "thumbnail" : "https://cdn2.iconfinder.com/data/icons/logos-brands-4/24/logo_brand_brands_logos_word-128.png", "stock" : 100 }
+{ "_id" : ObjectId("616b52d3ecbb8c9e02aafa59"), "title" : "Photoshop", "price" : 1700, "thumbnail" : "https://cdn2.iconfinder.com/data/icons/logos-brands-4/24/logo_brand_brands_logos_adobe_illustrator-128.png", "stock" : 100 }
+{ "_id" : ObjectId("616b52d3ecbb8c9e02aafa5a"), "title" : "Mac", "price" : 2300, "thumbnail" : "https://cdn2.iconfinder.com/data/icons/logos-brands-4/24/Apple-128.png", "stock" : 100 }
+{ "_id" : ObjectId("616b52d3ecbb8c9e02aafa5b"), "title" : "Computer", "price" : 2860, "thumbnail" : "https://cdn2.iconfinder.com/data/icons/free-simple-line-mix/48/40-Web_Development-128.png", "stock" : 100 }
+{ "_id" : ObjectId("616b52d3ecbb8c9e02aafa5c"), "title" : "Bitcoins", "price" : 3350, "thumbnail" : "https://cdn2.iconfinder.com/data/icons/free-simple-line-mix/48/24-Bitcoin-Process-128.png", "stock" : 100 }
+{ "_id" : ObjectId("616b52d3ecbb8c9e02aafa5d"), "title" : "Firewall", "price" : 4320, "thumbnail" : "https://cdn2.iconfinder.com/data/icons/free-simple-line-mix/48/13-Wall-128.png", "stock" : 0 }
+{ "_id" : ObjectId("616b52d3ecbb8c9e02aafa5e"), "title" : "VLC", "price" : 4990, "thumbnail" : "https://cdn2.iconfinder.com/data/icons/logos-brands-4/24/logo_brand_brands_logos_vlc_media_player-128.png", "stock" : 0 }
+
+#Crear un usuario 'pepe' clave: 'asd456' que sólo pueda leer la base de datos ecommerce. Verificar que pepe no pueda cambiar la información.
+> use admin
+switched to db admin
+> db.createUser(
+...   {
+...     user: "pepe",
+...     pwd: "asd456",
+...     roles: [
+...        { role: "read", db: "ecommerce" }
+...     ]
+...   }
+... )
+Successfully added user: {
+        "user" : "pepe",
+        "roles" : [
+                {
+                        "role" : "read",
+                        "db" : "ecommerce"
+                }
+        ]
+}
+
+> db.productos.insertOne({
+...   title: 'Ruler',
+...   price: 120,
+...   thumbnail: 'https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-256.png'
+... })
+uncaught exception: WriteCommandError({
+        "ok" : 0,
+        "errmsg" : "not authorized on ecommerce to execute command { insert: \"productos\", ordered: true, lsid: { id: UUID(\"50d75e4d-46c7-4792-bf9a-a8059ef25e97\") }, $db: \"ecommerce\" }",
+        "code" : 13,
+        "codeName" : "Unauthorized"
+}) :
+WriteCommandError({
+        "ok" : 0,
+        "errmsg" : "not authorized on ecommerce to execute command { insert: \"productos\", ordered: true, lsid: { id: UUID(\"50d75e4d-46c7-4792-bf9a-a8059ef25e97\") }, $db: \"ecommerce\" }",
+        "code" : 13,
+        "codeName" : "Unauthorized"
+})
+WriteCommandError@src/mongo/shell/bulk_api.js:421:48
+executeBatch@src/mongo/shell/bulk_api.js:936:23
+Bulk/this.execute@src/mongo/shell/bulk_api.js:1182:21
+DBCollection.prototype.insertOne@src/mongo/shell/crud_api.js:264:9
+@(shell):1:1
+>
+
+
+
+
+
