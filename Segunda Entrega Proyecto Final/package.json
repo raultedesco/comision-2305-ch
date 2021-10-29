@@ -1,0 +1,21 @@
+{
+  "type": "module",
+  "name": "segunda-entrega-proyecto-final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raul Tedesco",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "firebase-admin": "^10.0.0",
+    "knex": "^0.95.12",
+    "mongodb": "^4.1.3",
+    "mongoose": "^6.0.12",
+    "mysql": "^2.18.1",
+    "sqlite3": "^5.0.2"
+  }
+}
