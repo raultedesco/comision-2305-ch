@@ -13,7 +13,7 @@ router.use(express.urlencoded({ extended: true }));
 
 
 
-//Carrito 
+//Listar Carrito
 carritosRouter.get('/', async (req, res) => {
   res.json((await carritosApi.listarAll()).map(c => c.id))
 })
@@ -22,23 +22,24 @@ router.post("/", async (req, res) => {
   const id_carrito = await carritosApi.guardar()
   res.json(id_carrito);
 });
-
+//Borrar Carrito
 router.delete("/:id", (req, res) => {
   res.json(await carritosApi.borrar(req.params.id))
 });
 
-//Productos en Carrito
+//Get Productos en Carrito
 router.get("/:id/productos", (req, res, next) => {
   const carrito = await carritosApi.listar(req.params.id)
   res.json(carrito.productos)
 });
-
+//Add Productos en Carrito
 router.post("/:id/productos", async (req, res,next) => {
   const carrito = await carritosApi.listar(req.params.id)
   const producto = await productosApi.listar(req.body.id)
   carrito.productos.push(producto)
   await carritosApi.actualizar(carrito)
 });
+//Delete Productos en Carrito
 router.delete("/:id/productos/:id_p", (req, res) => {
   const carrito = await carritosApi.listar(req.params.id)
   const index = carrito.productos.findIndex(p => p.id == req.params.idProd)
