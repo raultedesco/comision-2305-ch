@@ -1,0 +1,775 @@
+Statistical profiling result from isolate-0x6371090-74757-v8.log, (7215 ticks, 1 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+   4709   65.3%          /home/raul/.nvm/versions/node/v17.3.0/bin/node
+    123    1.7%          /usr/lib/x86_64-linux-gnu/libc-2.31.so
+     14    0.2%          /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28
+      2    0.0%          [vdso]
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+   1583   21.9%   66.9%  LazyCompile: *<anonymous> file:///home/raul/coderhousecourse/github_entregable/Loggers%20Y%20Gzip/routes/random.js:10:23
+     40    0.6%    1.7%  LazyCompile: *resolve node:path:1091:10
+     14    0.2%    0.6%  LazyCompile: *readPackage node:internal/modules/cjs/loader:290:21
+      9    0.1%    0.4%  LazyCompile: *Module._nodeModulePaths node:internal/modules/cjs/loader:629:37
+      7    0.1%    0.3%  LazyCompile: *realpathSync node:fs:2410:22
+      3    0.0%    0.1%  LazyCompile: *Module._compile node:internal/modules/cjs/loader:1051:37
+      2    0.0%    0.1%  LazyCompile: *readPackageScope node:internal/modules/cjs/loader:321:26
+      2    0.0%    0.1%  LazyCompile: *normalizeString node:path:66:25
+      2    0.0%    0.1%  LazyCompile: *dirname node:path:1275:10
+      2    0.0%    0.1%  LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      2    0.0%    0.1%  Function: ^canBeRequiredByUsers node:internal/bootstrap/loaders:240:30
+      2    0.0%    0.1%  Function: ^Module.require node:internal/modules/cjs/loader:991:36
+      2    0.0%    0.1%  Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      1    0.0%    0.0%  RegExp: ^\$ref$|^\$id$|^\$db$
+      1    0.0%    0.0%  RegExp: (?:^|\/)\.?\.$
+      1    0.0%    0.0%  LazyCompile: *validateString node:internal/validators:118:24
+      1    0.0%    0.0%  LazyCompile: *readFileSync node:fs:450:22
+      1    0.0%    0.0%  LazyCompile: *nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1    0.0%    0.0%  LazyCompile: *getPathFromURLPosix node:internal/url:1447:29
+      1    0.0%    0.0%  LazyCompile: *basename node:path:1306:11
+      1    0.0%    0.0%  LazyCompile: *<anonymous> node:internal/fs/utils:686:40
+      1    0.0%    0.0%  Function: ^unsigned32 /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/faker/vendor/mersenne.js:73:23
+      1    0.0%    0.0%  Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      1    0.0%    0.0%  Function: ^syncExports node:internal/bootstrap/loaders:287:14
+      1    0.0%    0.0%  Function: ^stringToFlags node:internal/fs/utils:555:23
+      1    0.0%    0.0%  Function: ^require node:internal/modules/cjs/helpers:101:31
+      1    0.0%    0.0%  Function: ^popAsyncContext node:internal/async_hooks:545:25
+      1    0.0%    0.0%  Function: ^normalizeEncoding node:internal/util:160:27
+      1    0.0%    0.0%  Function: ^multiplication32 /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/faker/vendor/mersenne.js:88:29
+      1    0.0%    0.0%  Function: ^dirname node:path:1275:10
+      1    0.0%    0.0%  Function: ^compileFunction node:vm:308:25
+      1    0.0%    0.0%  Function: ^basename node:path:1306:11
+      1    0.0%    0.0%  Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1    0.0%    0.0%  Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1    0.0%    0.0%  Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1    0.0%    0.0%  Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1    0.0%    0.0%  Function: ^Long.add /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/bson/lib/long.js:252:35
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/validators:73:3
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/validators:168:39
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/fs/utils:357:35
+
+ [C++]:
+   ticks  total  nonlib   name
+    235    3.3%    9.9%  __write@@GLIBC_2.2.5
+    108    1.5%    4.6%  fwrite@@GLIBC_2.2.5
+     66    0.9%    2.8%  epoll_pwait@@GLIBC_2.6
+     35    0.5%    1.5%  syscall@@GLIBC_2.2.5
+     34    0.5%    1.4%  __libc_malloc@@GLIBC_2.2.5
+     30    0.4%    1.3%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)@@GLIBCXX_3.4.9
+     23    0.3%    1.0%  _IO_file_xsputn@@GLIBC_2.2.5
+     13    0.2%    0.5%  __pthread_mutex_unlock_usercnt
+     11    0.2%    0.5%  std::ostream::sentry::sentry(std::ostream&)@@GLIBCXX_3.4
+      7    0.1%    0.3%  std::ostream::sentry::~sentry()@@GLIBCXX_3.4
+      7    0.1%    0.3%  getrusage@@GLIBC_2.2.5
+      7    0.1%    0.3%  cfree@GLIBC_2.2.5
+      7    0.1%    0.3%  __libc_open
+      7    0.1%    0.3%  __GI___pthread_mutex_lock
+      6    0.1%    0.3%  __lll_lock_wait
+      5    0.1%    0.2%  std::ostream& std::ostream::_M_insert<long>(long)@@GLIBCXX_3.4.9
+      5    0.1%    0.2%  operator new(unsigned long)@@GLIBCXX_3.4
+      5    0.1%    0.2%  __mprotect@@GLIBC_PRIVATE
+      4    0.1%    0.2%  __pthread_cond_wait
+      4    0.1%    0.2%  __pthread_cond_signal
+      4    0.1%    0.2%  __libc_read
+      4    0.1%    0.2%  __GI___pthread_rwlock_unlock
+      3    0.0%    0.1%  std::__detail::_Prime_rehash_policy::_M_next_bkt(unsigned long) const@@GLIBCXX_3.4.18
+      2    0.0%    0.1%  std::ostream::operator<<(int)@@GLIBCXX_3.4
+      2    0.0%    0.1%  std::locale::id::_M_id() const@@GLIBCXX_3.4
+      2    0.0%    0.1%  operator delete[](void*)@@GLIBCXX_3.4
+      2    0.0%    0.1%  operator delete(void*)@@GLIBCXX_3.4
+      2    0.0%    0.1%  fputc@@GLIBC_2.2.5
+      2    0.0%    0.1%  __munmap@@GLIBC_PRIVATE
+      2    0.0%    0.1%  __mmap@@GLIBC_PRIVATE
+      2    0.0%    0.1%  __libc_write
+      2    0.0%    0.1%  __clock_gettime@@GLIBC_PRIVATE
+      2    0.0%    0.1%  _IO_setb@@GLIBC_2.2.5
+      2    0.0%    0.1%  _IO_default_xsputn@@GLIBC_2.2.5
+      1    0.0%    0.0%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const@@GLIBCXX_3.4
+      1    0.0%    0.0%  std::ostream& std::ostream::_M_insert<unsigned long>(unsigned long)@@GLIBCXX_3.4.9
+      1    0.0%    0.0%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+      1    0.0%    0.0%  std::_Rb_tree_increment(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
+      1    0.0%    0.0%  std::_Rb_tree_decrement(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
+      1    0.0%    0.0%  std::_Rb_tree_decrement(std::_Rb_tree_node_base const*)@@GLIBCXX_3.4
+      1    0.0%    0.0%  pthread_condattr_setclock
+      1    0.0%    0.0%  operator new[](unsigned long)@@GLIBCXX_3.4
+      1    0.0%    0.0%  __madvise@@GLIBC_PRIVATE
+      1    0.0%    0.0%  __getpid@@GLIBC_2.2.5
+      1    0.0%    0.0%  __errno_location
+      1    0.0%    0.0%  __GI___pthread_rwlock_wrlock
+      1    0.0%    0.0%  __GI___pthread_mutex_unlock
+      1    0.0%    0.0%  __GI___pthread_mutex_init
+      1    0.0%    0.0%  __GI___pthread_mutex_destroy
+      1    0.0%    0.0%  _IO_padn@@GLIBC_2.2.5
+      1    0.0%    0.0%  _IO_file_sync@@GLIBC_2.2.5
+
+ [Summary]:
+   ticks  total  nonlib   name
+   1697   23.5%   71.7%  JavaScript
+    669    9.3%   28.3%  C++
+    609    8.4%   25.7%  GC
+   4848   67.2%          Shared libraries
+      1    0.0%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+    146   35.9%    2.0%  __write@@GLIBC_2.2.5
+     98   24.1%    1.4%  fwrite@@GLIBC_2.2.5
+     35    8.6%    0.5%  syscall@@GLIBC_2.2.5
+     26    6.4%    0.4%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)@@GLIBCXX_3.4.9
+     20    4.9%    0.3%  _IO_file_xsputn@@GLIBC_2.2.5
+     14    3.4%    0.2%  __libc_malloc@@GLIBC_2.2.5
+      8    2.0%    0.1%  std::ostream::sentry::sentry(std::ostream&)@@GLIBCXX_3.4
+      7    1.7%    0.1%  __libc_open
+      6    1.5%    0.1%  std::ostream::sentry::~sentry()@@GLIBCXX_3.4
+      5    1.2%    0.1%  std::ostream& std::ostream::_M_insert<long>(long)@@GLIBCXX_3.4.9
+      5    1.2%    0.1%  operator new(unsigned long)@@GLIBCXX_3.4
+      4    1.0%    0.1%  cfree@GLIBC_2.2.5
+      4    1.0%    0.1%  __mprotect@@GLIBC_PRIVATE
+      3    0.7%    0.0%  __lll_lock_wait
+      3    0.7%    0.0%  __libc_read
+      3    0.7%    0.0%  __GI___pthread_mutex_lock
+      2    0.5%    0.0%  std::ostream::operator<<(int)@@GLIBCXX_3.4
+      2    0.5%    0.0%  operator delete[](void*)@@GLIBCXX_3.4
+      2    0.5%    0.0%  __pthread_mutex_unlock_usercnt
+      1    0.2%    0.0%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const@@GLIBCXX_3.4
+      1    0.2%    0.0%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+      1    0.2%    0.0%  std::_Rb_tree_increment(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
+      1    0.2%    0.0%  std::_Rb_tree_decrement(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
+      1    0.2%    0.0%  operator new[](unsigned long)@@GLIBCXX_3.4
+      1    0.2%    0.0%  operator delete(void*)@@GLIBCXX_3.4
+      1    0.2%    0.0%  fputc@@GLIBC_2.2.5
+      1    0.2%    0.0%  __munmap@@GLIBC_PRIVATE
+      1    0.2%    0.0%  __errno_location
+      1    0.2%    0.0%  __GI___pthread_rwlock_wrlock
+      1    0.2%    0.0%  __GI___pthread_mutex_unlock
+      1    0.2%    0.0%  _IO_setb@@GLIBC_2.2.5
+      1    0.2%    0.0%  _IO_file_sync@@GLIBC_2.2.5
+      1    0.2%    0.0%  _IO_default_xsputn@@GLIBC_2.2.5
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   4709   65.3%  /home/raul/.nvm/versions/node/v17.3.0/bin/node
+   2866   60.9%    /home/raul/.nvm/versions/node/v17.3.0/bin/node
+   1250   43.6%      Function: ^compileFunction node:vm:308:25
+   1062   85.0%        Function: ^wrapSafe node:internal/modules/cjs/loader:1011:18
+   1062  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+   1040   97.9%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+     22    2.1%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1106:37
+    173   13.8%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1051:37
+    173  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+    173  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+     15    1.2%        LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1011:18
+     15  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1051:37
+     15  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1106:37
+    456   15.9%      LazyCompile: *<anonymous> file:///home/raul/coderhousecourse/github_entregable/Loggers%20Y%20Gzip/routes/random.js:10:23
+    456  100.0%        Function: ^handle /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/express/lib/router/layer.js:86:49
+    456  100.0%          LazyCompile: ~next /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/express/lib/router/route.js:114:16
+    456  100.0%            LazyCompile: ~dispatch /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/express/lib/router/route.js:98:45
+    128    4.5%      LazyCompile: ~configSecureContext node:internal/tls/secure-context:120:29
+    128  100.0%        LazyCompile: ~createSecureContext node:_tls_common:98:29
+    128  100.0%          LazyCompile: ~connect node:_tls_wrap:1597:35
+    128  100.0%            LazyCompile: ~makeConnection /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:227:24
+    101    3.5%      /home/raul/.nvm/versions/node/v17.3.0/bin/node
+     17   16.8%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+     17  100.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      9   52.9%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      8   47.1%            Function: ^trySelf node:internal/modules/cjs/loader:441:17
+     15   14.9%        LazyCompile: *<anonymous> file:///home/raul/coderhousecourse/github_entregable/Loggers%20Y%20Gzip/routes/random.js:10:23
+     15  100.0%          Function: ^handle /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/express/lib/router/layer.js:86:49
+     15  100.0%            LazyCompile: ~next /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/express/lib/router/route.js:114:16
+      8    7.9%        Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      8  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      7   87.5%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1   12.5%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      4    4.0%        Function: ^compileFunction node:vm:308:25
+      3   75.0%          Function: ^wrapSafe node:internal/modules/cjs/loader:1011:18
+      3  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      1   25.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1051:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      3    3.0%        LazyCompile: ~isIPv6 node:internal/net:35:16
+      3  100.0%          LazyCompile: ~isIP node:internal/net:39:14
+      3  100.0%            LazyCompile: ~parseSslOptions /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:211:25
+      3    3.0%        LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      3  100.0%          Function: ^Module.require node:internal/modules/cjs/loader:991:36
+      3  100.0%            Function: ^require node:internal/modules/cjs/helpers:101:31
+      3    3.0%        LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      3  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      3  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      2    2.0%        LazyCompile: ~resolvePackageTargetString node:internal/modules/esm/resolve:464:36
+      2  100.0%          LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:521:30
+      1   50.0%            LazyCompile: ~resolvePackageTarget node:internal/modules/esm/resolve:521:30
+      1   50.0%            LazyCompile: ~packageExportsResolve node:internal/modules/esm/resolve:624:31
+      2    2.0%        LazyCompile: ~pathtoRegexp /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/path-to-regexp/index.js:28:22
+      2  100.0%          LazyCompile: ~Layer /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/express/lib/router/layer.js:33:15
+      1   50.0%            LazyCompile: ~use /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/express/lib/router/index.js:428:25
+      1   50.0%            LazyCompile: ~route /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/express/lib/router/index.js:491:29
+      2    2.0%        LazyCompile: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:63:43
+      2  100.0%          LazyCompile: ~prepareHandshakeDocument /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:128:34
+      2  100.0%            LazyCompile: ~performInitialHandshake /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:47:33
+      2    2.0%        LazyCompile: *stat node:internal/modules/cjs/loader:151:14
+      1   50.0%          Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      1  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      1   50.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      2    2.0%        Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      1   50.0%          Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1   50.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:963:33
+      2    2.0%        Function: ^Module.load node:internal/modules/cjs/loader:963:33
+      2  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      2  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:991:36
+      2    2.0%        Function: ^FastBuffer node:internal/buffer:958:14
+      2  100.0%          Function: ^createUnsafeBuffer node:internal/buffer:1059:28
+      2  100.0%            Function: ^createPool node:buffer:150:20
+     92    3.2%      Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     72   78.3%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+     11   15.3%          Function: ~<anonymous> node:crypto:1:1
+     11  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      9   12.5%          Function: ~<anonymous> node:http:1:1
+      9  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      6    8.3%          Function: ~<anonymous> node:_http_agent:1:1
+      6  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      5    6.9%          Function: ~<anonymous> node:tls:1:1
+      5  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      4    5.6%          Function: ~<anonymous> node:internal/child_process:1:1
+      4  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      4    5.6%          Function: ~<anonymous> node:child_process:1:1
+      4  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      4    5.6%          Function: ~<anonymous> node:_http_client:1:1
+      4  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3    4.2%          Function: ~<anonymous> node:assert:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3    4.2%          Function: ~<anonymous> node:_tls_common:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    2.8%          LazyCompile: ~lazyRequire node:internal/crypto/util:67:21
+      2  100.0%            LazyCompile: ~get node:crypto:287:8
+      2    2.8%          LazyCompile: ~initCJSParse node:internal/modules/esm/translators:58:28
+      2  100.0%            LazyCompile: ~commonjsStrategy node:internal/modules/esm/translators:146:60
+      2    2.8%          Function: ~<anonymous> node:internal/crypto/pbkdf2:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    2.8%          Function: ~<anonymous> node:internal/crypto/hkdf:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    2.8%          Function: ~<anonymous> node:internal/cluster/primary:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    2.8%          Function: ~<anonymous> node:_http_common:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.4%          LazyCompile: ~lazyLoadStreams node:fs:2843:25
+      1  100.0%            LazyCompile: ~get ReadStream node:fs:2986:17
+      1    1.4%          LazyCompile: ~initializeCJSLoader node:internal/bootstrap/pre_execution:412:29
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      1    1.4%          LazyCompile: ~get node:dns:349:8
+      1  100.0%            /home/raul/.nvm/versions/node/v17.3.0/bin/node
+      1    1.4%          LazyCompile: ~get BlockList node:net:1775:16
+      1  100.0%            /home/raul/.nvm/versions/node/v17.3.0/bin/node
+      1    1.4%          Function: ~<anonymous> node:tty:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.4%          Function: ~<anonymous> node:internal/crypto/cipher:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.4%          Function: ~<anonymous> node:internal/blocklist:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.4%          Function: ~<anonymous> node:dns:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.4%          Function: ~<anonymous> node:cluster:1:1
+      1  100.0%            LazyCompile: *nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1    1.4%          Function: ~<anonymous> node:_tls_wrap:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.4%          Function: ~<anonymous> node:_http_outgoing:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     18   19.6%        Function: ^compileForPublicLoader node:internal/bootstrap/loaders:246:25
+     18  100.0%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+     18  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      2    2.2%        LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      1   50.0%          LazyCompile: ~loadNativeModule node:internal/modules/cjs/helpers:44:26
+      1  100.0%            LazyCompile: ~builtinStrategy node:internal/modules/esm/translators:248:58
+      1   50.0%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+      1  100.0%            LazyCompile: ~Module._load node:internal/modules/cjs/loader:757:24
+     51    1.8%      LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     51  100.0%        LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+     11   21.6%          Function: ~<anonymous> node:internal/webstreams/adapters:1:1
+     11  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      5    9.8%          LazyCompile: ~initializeCJSLoader node:internal/bootstrap/pre_execution:412:29
+      5  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      5    9.8%          Function: ~<anonymous> node:internal/webstreams/readablestream:1:1
+      5  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      5    9.8%          Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      5  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      4    7.8%          Function: ~<anonymous> node:internal/process/esm_loader:1:1
+      4  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      4    7.8%          Function: ~<anonymous> node:internal/fs/promises:1:1
+      4  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3    5.9%          Function: ~<anonymous> node:internal/modules/esm/get_source:1:1
+      3  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    3.9%          Function: ~<anonymous> node:internal/source_map/source_map_cache:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    3.9%          Function: ~<anonymous> node:internal/modules/esm/module_map:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    3.9%          Function: ~<anonymous> node:internal/modules/esm/load:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    3.9%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    2.0%          LazyCompile: ~initializeSourceMapsHandlers node:internal/bootstrap/pre_execution:451:38
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      1    2.0%          LazyCompile: ~initializeReport node:internal/bootstrap/pre_execution:173:26
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      1    2.0%          Function: ~<anonymous> node:internal/modules/esm/translators:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.0%          Function: ~<anonymous> node:internal/modules/esm/resolve:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.0%          Function: ~<anonymous> node:internal/modules/cjs/loader:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.0%          Function: ~<anonymous> node:internal/bootstrap/pre_execution:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     32    1.1%      Function: ^stat node:internal/modules/cjs/loader:151:14
+     18   56.3%        Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+     18  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+     18  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+     14   43.8%        Function: ^tryFile node:internal/modules/cjs/loader:384:17
+     14  100.0%          Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+     14  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+     31    1.1%      LazyCompile: ~pbkdf2Sync node:internal/crypto/pbkdf2:68:20
+     31  100.0%        LazyCompile: ~HI /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:227:12
+     31  100.0%          LazyCompile: ~continueScramConversation /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:93:35
+     31  100.0%            LazyCompile: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:85:80
+     31    1.1%      LazyCompile: ~TLSSocket.getPeerCertificate node:_tls_wrap:984:50
+     31  100.0%        LazyCompile: ~onConnectSecure node:_tls_wrap:1516:25
+     31  100.0%          Function: ^emit node:events:340:44
+     31  100.0%            LazyCompile: ~TLSSocket._finishInit node:_tls_wrap:918:43
+    823   17.5%    LazyCompile: *<anonymous> file:///home/raul/coderhousecourse/github_entregable/Loggers%20Y%20Gzip/routes/random.js:10:23
+    823  100.0%      Function: ^handle /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/express/lib/router/layer.js:86:49
+    823  100.0%        LazyCompile: ~next /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/express/lib/router/route.js:114:16
+    823  100.0%          LazyCompile: ~dispatch /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/express/lib/router/route.js:98:45
+    823  100.0%            Function: ^handle /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/express/lib/router/layer.js:86:49
+     87    1.8%    LazyCompile: *compileFunction node:vm:308:25
+     50   57.5%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1051:37
+     50  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+     50  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+     49   98.0%            Function: ^Module.require node:internal/modules/cjs/loader:991:36
+      1    2.0%            Function: ^<anonymous> node:internal/modules/esm/translators:159:67
+     37   42.5%      Function: ^wrapSafe node:internal/modules/cjs/loader:1011:18
+     37  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+     37  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+     37  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:963:33
+     72    1.5%    Function: ^handle /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/express/lib/router/layer.js:86:49
+     72  100.0%      LazyCompile: ~next /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/express/lib/router/route.js:114:16
+     72  100.0%        LazyCompile: ~dispatch /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/express/lib/router/route.js:98:45
+     72  100.0%          Function: ^handle /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/express/lib/router/layer.js:86:49
+     72  100.0%            Function: ^<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/express/lib/router/index.js:275:64
+
+   1583   21.9%  LazyCompile: *<anonymous> file:///home/raul/coderhousecourse/github_entregable/Loggers%20Y%20Gzip/routes/random.js:10:23
+   1583  100.0%    Function: ^handle /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/express/lib/router/layer.js:86:49
+   1583  100.0%      LazyCompile: ~next /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/express/lib/router/route.js:114:16
+   1583  100.0%        LazyCompile: ~dispatch /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/express/lib/router/route.js:98:45
+   1583  100.0%          Function: ^handle /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/express/lib/router/layer.js:86:49
+   1583  100.0%            Function: ^<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/express/lib/router/index.js:275:64
+
+    235    3.3%  __write@@GLIBC_2.2.5
+    112   47.7%    /home/raul/.nvm/versions/node/v17.3.0/bin/node
+      4    3.6%      Function: ^emit node:events:340:44
+      1   25.0%        LazyCompile: ~processIncomingData /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/cmap/message_stream.js:79:29
+      1  100.0%          LazyCompile: ~_write /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/cmap/message_stream.js:26:11
+      1  100.0%            LazyCompile: ~writeOrBuffer node:internal/streams/writable:366:23
+      1   25.0%        LazyCompile: ~addChunk /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:295:18
+      1  100.0%          LazyCompile: ~readableAddChunk /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:249:26
+      1  100.0%            LazyCompile: ~Readable.push /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:222:36
+      1   25.0%        LazyCompile: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/sdam/server.js:58:62
+      1  100.0%          Function: ^emit node:events:340:44
+      1  100.0%            LazyCompile: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/sdam/monitor.js:200:52
+      1   25.0%        LazyCompile: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection_pool.js:379:34
+      1  100.0%          Function: ^emit node:events:340:44
+      1  100.0%            LazyCompile: ~messageHandler /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:421:35
+      4    3.6%      /home/raul/.nvm/versions/node/v17.3.0/bin/node
+      1   25.0%        LazyCompile: ~strEscape /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/safe-stable-stringify/stable.js:36:20
+      1  100.0%          LazyCompile: ~stringifyReplacerFn /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/safe-stable-stringify/stable.js:386:30
+      1  100.0%            LazyCompile: ~stringify /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/safe-stable-stringify/stable.js:538:20
+      1   25.0%        LazyCompile: ~parseOptions /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/connection_string.js:205:22
+      1  100.0%          LazyCompile: ~MongoClient /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/mongo_client.js:60:16
+      1  100.0%            LazyCompile: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/lib/connection.js:776:31
+      1   25.0%        Function: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/depd/index.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1051:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1   25.0%        Function: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/debug/src/node.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      2    1.8%      Script: ~<anonymous> file:///home/raul/coderhousecourse/github_entregable/Loggers%20Y%20Gzip/utils/logger.js:1:1
+      2  100.0%        /home/raul/.nvm/versions/node/v17.3.0/bin/node
+      2  100.0%          /home/raul/.nvm/versions/node/v17.3.0/bin/node
+      2  100.0%            LazyCompile: ~run node:internal/modules/esm/module_job:190:12
+      2    1.8%      LazyCompile: ~translatePeerCertificate node:_tls_common:124:34
+      2  100.0%        LazyCompile: ~translatePeerCertificate node:_tls_common:124:34
+      2  100.0%          LazyCompile: ~translatePeerCertificate node:_tls_common:124:34
+      2  100.0%            LazyCompile: ~TLSSocket.getPeerCertificate node:_tls_wrap:984:50
+      2    1.8%      LazyCompile: ~serializeInto /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/bson/lib/parser/serializer.js:550:23
+      1   50.0%        LazyCompile: ~serializeObject /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/bson/lib/parser/serializer.js:258:25
+      1  100.0%          LazyCompile: ~serializeInto /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/bson/lib/parser/serializer.js:550:23
+      1  100.0%            LazyCompile: ~serializeObject /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/bson/lib/parser/serializer.js:258:25
+      1   50.0%        LazyCompile: ~serialize /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/bson/lib/bson.js:111:19
+      1  100.0%          LazyCompile: ~toBin /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/cmap/commands.js:82:10
+      1  100.0%            LazyCompile: ~writeCommand /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/cmap/message_stream.js:35:17
+      2    1.8%      LazyCompile: ~moduleResolve node:internal/modules/esm/resolve:898:23
+      2  100.0%        LazyCompile: ~defaultResolve node:internal/modules/esm/resolve:964:24
+      2  100.0%          LazyCompile: ~resolve node:internal/modules/esm/loader:509:16
+      2  100.0%            LazyCompile: ~getModuleJob node:internal/modules/esm/loader:242:21
+      2    1.8%      LazyCompile: ~Topology /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:58:16
+      2  100.0%        LazyCompile: ~createTopology /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/operations/connect.js:53:24
+      2  100.0%          LazyCompile: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/operations/connect.js:41:67
+      2  100.0%            LazyCompile: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/connection_string.js:72:39
+      2    1.8%      LazyCompile: ~Faker /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/faker/lib/index.js:24:16
+      2  100.0%        Function: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/faker/index.js:1:1
+      2  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      2  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+     34   14.5%    LazyCompile: *compileFunction node:vm:308:25
+     19   55.9%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1051:37
+     19  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+     19  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+     18   94.7%            Function: ^Module.require node:internal/modules/cjs/loader:991:36
+      1    5.3%            Function: ^<anonymous> node:internal/modules/esm/translators:159:67
+     15   44.1%      Function: ^wrapSafe node:internal/modules/cjs/loader:1011:18
+     15  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+     15  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+     15  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:963:33
+
+    123    1.7%  /usr/lib/x86_64-linux-gnu/libc-2.31.so
+     50   40.7%    /home/raul/.nvm/versions/node/v17.3.0/bin/node
+      5   10.0%      /home/raul/.nvm/versions/node/v17.3.0/bin/node
+      1   20.0%        LazyCompile: ~module.exports.get_napi_build_versions_raw /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/@mapbox/node-pre-gyp/lib/util/napi.js:140:54
+      1  100.0%          LazyCompile: ~module.exports.validate_package_json /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/@mapbox/node-pre-gyp/lib/util/napi.js:46:48
+      1  100.0%            LazyCompile: ~validate_config /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/@mapbox/node-pre-gyp/lib/util/versioning.js:195:25
+      1   20.0%        Function: ^stat node:internal/modules/cjs/loader:151:14
+      1  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      1  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      1   20.0%        Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      1  100.0%          Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1   20.0%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      1  100.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      1  100.0%            Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      1   20.0%        Function: ^compileFunction node:vm:308:25
+      1  100.0%          Function: ^wrapSafe node:internal/modules/cjs/loader:1011:18
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      4    8.0%      LazyCompile: *realpathSync node:fs:2410:22
+      2   50.0%        LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      2  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      2  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      2   50.0%        Function: ^toRealPath node:internal/modules/cjs/loader:393:20
+      2  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      2  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      3    6.0%      LazyCompile: *resolve node:path:1091:10
+      2   66.7%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      2  100.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      1   50.0%            Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      1   50.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1   33.3%        Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      3    6.0%      LazyCompile: *readPackage node:internal/modules/cjs/loader:290:21
+      3  100.0%        LazyCompile: *readPackageScope node:internal/modules/cjs/loader:321:26
+      2   66.7%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      2  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1   33.3%          Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      3    6.0%      LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      3  100.0%        Function: ^Module.require node:internal/modules/cjs/loader:991:36
+      3  100.0%          Function: ^require node:internal/modules/cjs/helpers:101:31
+      1   33.3%            Function: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/faker/lib/locales/pt_BR/index.js:1:1
+      1   33.3%            Function: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/faker/lib/locales/nl_BE/address/index.js:1:1
+      1   33.3%            Function: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/faker/lib/locales/fr/address/index.js:1:1
+      3    6.0%      LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      3  100.0%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      3  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      3  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:991:36
+      2    4.0%      Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      2  100.0%        Function: ^Module.require node:internal/modules/cjs/loader:991:36
+      2  100.0%          Function: ^require node:internal/modules/cjs/helpers:101:31
+      1   50.0%            Function: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/semver/index.js:1:1
+      1   50.0%            Function: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/faker/lib/locales/es_MX/lorem/index.js:1:1
+      2    4.0%      Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1   50.0%        LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:991:36
+      1   50.0%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:991:36
+      1    2.0%      LazyCompile: ~vary /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/vary/index.js:133:15
+      1  100.0%        LazyCompile: ~onResponseHeaders /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/compression/index.js:140:47
+      1  100.0%          LazyCompile: ~writeHead /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/on-headers/index.js:28:29
+      1  100.0%            LazyCompile: ~_implicitHeader node:_http_server:262:68
+      1    2.0%      LazyCompile: ~validate_config /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/@mapbox/node-pre-gyp/lib/util/versioning.js:195:25
+      1  100.0%        LazyCompile: ~exports.find /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/@mapbox/node-pre-gyp/lib/pre-binding.js:17:24
+      1  100.0%          Function: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/bcrypt/bcrypt.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      1    2.0%      LazyCompile: ~urlencoded /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/body-parser/lib/types/urlencoded.js:43:21
+      1  100.0%        Script: ~<anonymous> file:///home/raul/coderhousecourse/github_entregable/Loggers%20Y%20Gzip/routes/index.js:1:1
+      1  100.0%          /home/raul/.nvm/versions/node/v17.3.0/bin/node
+      1  100.0%            /home/raul/.nvm/versions/node/v17.3.0/bin/node
+      1    2.0%      LazyCompile: ~urlParse node:url:153:18
+      1  100.0%        LazyCompile: ~validate_config /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/@mapbox/node-pre-gyp/lib/util/versioning.js:195:25
+      1  100.0%          LazyCompile: ~exports.find /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/@mapbox/node-pre-gyp/lib/pre-binding.js:17:24
+      1  100.0%            Function: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/bcrypt/bcrypt.js:1:1
+      1    2.0%      LazyCompile: ~tryReadSync node:fs:429:21
+      1  100.0%        LazyCompile: ~readFileSync node:fs:450:22
+      1  100.0%          LazyCompile: ~cjsPreparseModuleExports node:internal/modules/esm/translators:190:34
+      1  100.0%            LazyCompile: ~commonjsStrategy node:internal/modules/esm/translators:146:60
+      1    2.0%      LazyCompile: ~toRealPath node:internal/modules/cjs/loader:393:20
+      1  100.0%        LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%          LazyCompile: ~resolveMainPath node:internal/modules/run_main:12:25
+      1  100.0%            LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:74:31
+      1    2.0%      LazyCompile: ~setHeader node:_http_outgoing:574:57
+      1  100.0%        LazyCompile: ~setcookie /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/express-session/index.js:655:19
+      1  100.0%          LazyCompile: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/express-session/index.js:220:28
+      1  100.0%            LazyCompile: ~writeHead /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/on-headers/index.js:28:29
+      1    2.0%      LazyCompile: ~serializeInto /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/bson/lib/parser/serializer.js:550:23
+      1  100.0%        LazyCompile: ~serialize /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/bson/lib/bson.js:111:19
+      1  100.0%          LazyCompile: ~serializeBson /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/cmap/commands.js:530:18
+      1  100.0%            LazyCompile: ~makeDocumentSegment /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/cmap/commands.js:522:24
+      1    2.0%      LazyCompile: ~parseOpts /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/@mapbox/node-pre-gyp/lib/node-pre-gyp.js:144:37
+      1  100.0%        LazyCompile: ~Run /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/@mapbox/node-pre-gyp/lib/node-pre-gyp.js:78:13
+      1  100.0%          LazyCompile: ~exports.find /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/@mapbox/node-pre-gyp/lib/pre-binding.js:17:24
+      1  100.0%            Function: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/bcrypt/bcrypt.js:1:1
+      1    2.0%      LazyCompile: ~makeFirstMessage /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:61:26
+      1  100.0%        LazyCompile: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:25:32
+      1  100.0%          LazyCompile: ~<anonymous> node:internal/crypto/random:104:43
+      1  100.0%            LazyCompile: ~onJobDone node:internal/crypto/random:299:19
+      1    2.0%      LazyCompile: ~getAll /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongodb-connection-string-url/lib/index.js:41:11
+      1  100.0%        LazyCompile: ~parseOptions /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/connection_string.js:205:22
+      1  100.0%          LazyCompile: ~MongoClient /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/mongo_client.js:60:16
+      1  100.0%            LazyCompile: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/lib/connection.js:776:31
+      1    2.0%      LazyCompile: ~get pathname node:internal/url:911:15
+      1  100.0%        LazyCompile: ~getPackageScopeConfig node:internal/modules/esm/resolve:224:31
+      1  100.0%          LazyCompile: ~packageResolve node:internal/modules/esm/resolve:815:24
+      1  100.0%            LazyCompile: ~moduleResolve node:internal/modules/esm/resolve:898:23
+      1    2.0%      LazyCompile: ~continueScramConversation /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:93:35
+      1  100.0%        LazyCompile: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:85:80
+      1  100.0%          LazyCompile: ~messageHandler /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:421:35
+      1  100.0%            Function: ^emit node:events:340:44
+      1    2.0%      LazyCompile: ~cjsPreparseModuleExports node:internal/modules/esm/translators:190:34
+      1  100.0%        LazyCompile: ~commonjsStrategy node:internal/modules/esm/translators:146:60
+      1  100.0%          /home/raul/.nvm/versions/node/v17.3.0/bin/node
+      1    2.0%      LazyCompile: ~ZlibBase._destroy node:zlib:406:39
+      1  100.0%        LazyCompile: ~_destroy node:internal/streams/destroy:77:18
+      1  100.0%          LazyCompile: ~destroy node:internal/streams/destroy:39:17
+      1  100.0%            LazyCompile: ~endReadableNT node:internal/streams/readable:1336:23
+      1    2.0%      LazyCompile: ~Transform /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/winston/node_modules/readable-stream/lib/_stream_transform.js:98:19
+      1  100.0%        LazyCompile: ~Logger /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/winston/lib/winston/logger.js:40:14
+      1  100.0%          LazyCompile: ~DerivedLogger /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/winston/lib/winston/create-logger.js:43:16
+      1  100.0%            LazyCompile: ~module.exports /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/winston/lib/winston/create-logger.js:25:27
+      1    2.0%      LazyCompile: ~StatsBase.isDirectory node:internal/fs/utils:414:43
+      1  100.0%        LazyCompile: ~finalizeResolution node:internal/modules/esm/resolve:367:28
+      1  100.0%          LazyCompile: ~moduleResolve node:internal/modules/esm/resolve:898:23
+      1  100.0%            LazyCompile: ~defaultResolve node:internal/modules/esm/resolve:964:24
+      1    2.0%      LazyCompile: ~ReadableState node:internal/streams/readable:83:23
+      1  100.0%        LazyCompile: ~Readable node:internal/streams/readable:186:18
+      1  100.0%          LazyCompile: ~Duplex node:internal/streams/duplex:52:16
+      1  100.0%            LazyCompile: ~Socket node:net:283:16
+      1    2.0%      LazyCompile: ~Pager.set /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/memory-pager/index.js:81:32
+      1  100.0%        LazyCompile: ~Bitfield /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/sparse-bitfield/index.js:5:19
+      1  100.0%          LazyCompile: ~Bitfield /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/sparse-bitfield/index.js:5:19
+      1  100.0%            LazyCompile: ~read /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/saslprep/lib/memory-code-points.js:15:14
+      1    2.0%      LazyCompile: ~Connection.onOpen /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/lib/connection.js:626:39
+      1  100.0%        LazyCompile: ~_setClient /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/lib/connection.js:826:20
+      1  100.0%          LazyCompile: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/lib/connection.js:786:20
+      1  100.0%            LazyCompile: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/utils.js:494:13
+      1    2.0%      LazyCompile: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/normalizr/dist/normalizr.js:132:59
+      1  100.0%        /home/raul/.nvm/versions/node/v17.3.0/bin/node
+      1  100.0%          LazyCompile: ~define /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/normalizr/dist/normalizr.js:131:34
+      1  100.0%            LazyCompile: ~EntitySchema /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/normalizr/dist/normalizr.js:92:24
+      1    2.0%      LazyCompile: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:73:85
+      1  100.0%        LazyCompile: ~messageHandler /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:421:35
+      1  100.0%          Function: ^emit node:events:340:44
+      1  100.0%            LazyCompile: ~processIncomingData /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/cmap/message_stream.js:79:29
+      1    2.0%      LazyCompile: *readPackageScope node:internal/modules/cjs/loader:321:26
+      1  100.0%        Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      1  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1    2.0%      Function: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/knex/lib/execution/transaction.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1051:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    2.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:963:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      7    5.7%    LazyCompile: *compileFunction node:vm:308:25
+      4   57.1%      Function: ^wrapSafe node:internal/modules/cjs/loader:1011:18
+      4  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      4  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      4  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:963:33
+      3   42.9%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1051:37
+      3  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      3  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      3  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:991:36
+
+    108    1.5%  fwrite@@GLIBC_2.2.5
+     55   50.9%    /home/raul/.nvm/versions/node/v17.3.0/bin/node
+      4    7.3%      LazyCompile: ~value node:internal/console/constructor:320:20
+      4  100.0%        LazyCompile: ~log node:internal/console/constructor:358:6
+      4  100.0%          /home/raul/.nvm/versions/node/v17.3.0/bin/node
+      4  100.0%            Script: ~<anonymous> file:///home/raul/coderhousecourse/github_entregable/Loggers%20Y%20Gzip/routes/index.js:1:1
+      4    7.3%      LazyCompile: ~onParseError node:internal/url:551:22
+      4  100.0%        /home/raul/.nvm/versions/node/v17.3.0/bin/node
+      4  100.0%          LazyCompile: ~URL node:internal/url:624:14
+      4  100.0%            LazyCompile: ~moduleResolve node:internal/modules/esm/resolve:898:23
+      3    5.5%      Function: ~<anonymous> node:internal/fs/rimraf:1:1
+      3  100.0%        LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3  100.0%          LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      3  100.0%            Function: ~<anonymous> node:internal/fs/promises:1:1
+      3    5.5%      /home/raul/.nvm/versions/node/v17.3.0/bin/node
+      1   33.3%        Script: ~<anonymous> file:///home/raul/coderhousecourse/github_entregable/Loggers%20Y%20Gzip/routes/index.js:1:1
+      1  100.0%          /home/raul/.nvm/versions/node/v17.3.0/bin/node
+      1  100.0%            /home/raul/.nvm/versions/node/v17.3.0/bin/node
+      1   33.3%        LazyCompile: ~translatePeerCertificate node:_tls_common:124:34
+      1  100.0%          LazyCompile: ~translatePeerCertificate node:_tls_common:124:34
+      1  100.0%            LazyCompile: ~TLSSocket.getPeerCertificate node:_tls_wrap:984:50
+      1   33.3%        LazyCompile: ~match /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/express/lib/router/layer.js:110:39
+      1  100.0%          LazyCompile: ~matchLayer /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/express/lib/router/index.js:572:20
+      1  100.0%            LazyCompile: ~next /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/express/lib/router/index.js:176:16
+      2    3.6%      LazyCompile: ~realpathSync node:fs:2410:22
+      2  100.0%        LazyCompile: ~toRealPath node:internal/modules/cjs/loader:393:20
+      2  100.0%          LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      2  100.0%            LazyCompile: ~resolveMainPath node:internal/modules/run_main:12:25
+      2    3.6%      LazyCompile: ~createHash node:crypto:129:20
+      2  100.0%        LazyCompile: ~passwordDigest /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:182:24
+      2  100.0%          LazyCompile: ~continueScramConversation /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:93:35
+      2  100.0%            LazyCompile: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:85:80
+      2    3.6%      LazyCompile: ~compileFunction node:vm:308:25
+      2  100.0%        LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1011:18
+      2  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1051:37
+      2  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1    1.8%      Script: ~<anonymous> file:///home/raul/coderhousecourse/github_entregable/Loggers%20Y%20Gzip/routes/index.js:1:1
+      1  100.0%        /home/raul/.nvm/versions/node/v17.3.0/bin/node
+      1  100.0%          /home/raul/.nvm/versions/node/v17.3.0/bin/node
+      1  100.0%            LazyCompile: ~run node:internal/modules/esm/module_job:190:12
+      1    1.8%      LazyCompile: ~validateBoolean node:internal/validators:139:25
+      1  100.0%        Function: ^compileFunction node:vm:308:25
+      1  100.0%          Function: ^wrapSafe node:internal/modules/cjs/loader:1011:18
+      1  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1051:37
+      1    1.8%      LazyCompile: ~toRealPath node:internal/modules/cjs/loader:393:20
+      1  100.0%        LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%          LazyCompile: ~resolveMainPath node:internal/modules/run_main:12:25
+      1  100.0%            LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:74:31
+      1    1.8%      LazyCompile: ~setupWarningHandler node:internal/bootstrap/pre_execution:132:29
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.8%      LazyCompile: ~setUnrefTimeout node:internal/timers:379:25
+      1  100.0%        LazyCompile: ~setStreamTimeout node:internal/stream_base_commons:237:26
+      1  100.0%          LazyCompile: ~makeConnection /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:227:24
+      1  100.0%            LazyCompile: ~connect /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:15:17
+      1    1.8%      LazyCompile: ~setStreamTimeout node:internal/stream_base_commons:237:26
+      1  100.0%        LazyCompile: ~makeConnection /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:227:24
+      1  100.0%          LazyCompile: ~connect /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:15:17
+      1  100.0%            LazyCompile: ~checkServer /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/sdam/monitor.js:138:21
+      1    1.8%      LazyCompile: ~setPosition node:internal/timers:418:21
+      1  100.0%        LazyCompile: ~percolateUp node:internal/priority_queue:73:14
+      1  100.0%          LazyCompile: ~insert node:internal/priority_queue:34:9
+      1  100.0%            Function: ^insert node:internal/timers:357:16
+      1    1.8%      LazyCompile: ~selectServer /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:281:17
+      1  100.0%        LazyCompile: ~connect /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:182:12
+      1  100.0%          LazyCompile: ~createTopology /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/operations/connect.js:53:24
+      1  100.0%            LazyCompile: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/operations/connect.js:41:67
+      1    1.8%      LazyCompile: ~scanLine /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/ejs/lib/ejs.js:803:22
+      1  100.0%        LazyCompile: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/ejs/lib/ejs.js:730:32
+      1  100.0%          /home/raul/.nvm/versions/node/v17.3.0/bin/node
+      1  100.0%            LazyCompile: ~generateSource /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/ejs/lib/ejs.js:709:28
+      1    1.8%      LazyCompile: ~resolve node:path:1091:10
+      1  100.0%        LazyCompile: ~patchProcessObject node:internal/bootstrap/pre_execution:81:28
+      1  100.0%          LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      1  100.0%            Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.8%      LazyCompile: ~push node:internal/fixed_queue:75:7
+      1  100.0%        LazyCompile: ~push node:internal/fixed_queue:99:7
+      1  100.0%          LazyCompile: ~nextTick node:internal/process/task_queues:104:18
+      1  100.0%            LazyCompile: ~onConstruct node:internal/streams/destroy:260:23
+      1    1.8%      LazyCompile: ~processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.8%      LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      1  100.0%        Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.8%      LazyCompile: ~patchProcessObject node:internal/bootstrap/pre_execution:81:28
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.8%      LazyCompile: ~overRest /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/lodash/_overRest.js:15:18
+      1  100.0%        LazyCompile: ~baseRest /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/lodash/_baseRest.js:13:18
+      1  100.0%          Function: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/lodash/defer.js:1:1
+      1  100.0%            LazyCompile: *Module._compile node:internal/modules/cjs/loader:1051:37
+      1    1.8%      LazyCompile: ~next /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/express/lib/router/index.js:176:16
+      1  100.0%        LazyCompile: ~handle /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/express/lib/router/index.js:136:31
+      1  100.0%          LazyCompile: ~handle /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/express/lib/application.js:158:29
+      1  100.0%            LazyCompile: ~app /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/express/lib/express.js:38:21
+      1    1.8%      LazyCompile: ~lazyrouter /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/express/lib/application.js:137:37
+      1  100.0%        LazyCompile: ~use /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/express/lib/application.js:187:23
+      1  100.0%          Script: ~<anonymous> file:///home/raul/coderhousecourse/github_entregable/Loggers%20Y%20Gzip/server.js:1:1
+      1  100.0%            /home/raul/.nvm/versions/node/v17.3.0/bin/node
+      1    1.8%      LazyCompile: ~emitBeforeScript node:internal/async_hooks:501:26
+      1  100.0%        LazyCompile: ~processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.8%      LazyCompile: ~deserialize /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/bson/lib/parser/deserializer.js:36:21
+      1  100.0%        LazyCompile: ~deserialize /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/bson/lib/bson.js:162:21
+      1  100.0%          LazyCompile: ~parse /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/cmap/commands.js:384:10
+      1  100.0%            LazyCompile: ~messageHandler /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:421:35
+      1    1.8%      LazyCompile: ~afterWrite node:internal/streams/writable:488:20
+      1  100.0%        LazyCompile: ~onwrite node:internal/streams/writable:426:17
+      1  100.0%          LazyCompile: ~onWriteComplete node:internal/stream_base_commons:80:25
+      1    1.8%      LazyCompile: ~afterConnect node:net:1119:22
+      1    1.8%      LazyCompile: ~_instantiate node:internal/modules/esm/module_job:108:21
+      1  100.0%        LazyCompile: ~instantiate node:internal/modules/esm/module_job:101:14
+      1  100.0%          LazyCompile: ~run node:internal/modules/esm/module_job:190:12
+      1  100.0%            LazyCompile: ~<anonymous> node:internal/modules/esm/loader:333:15
+      1    1.8%      LazyCompile: ~ServerSession /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/sessions.js:524:16
+      1  100.0%        LazyCompile: ~acquire /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/sessions.js:577:12
+      1  100.0%          LazyCompile: ~get serverSession /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/sessions.js:93:22
+      1  100.0%            LazyCompile: ~applySession /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/sessions.js:643:22
+      1    1.8%      LazyCompile: ~Server /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/sdam/server.js:28:16
+      1  100.0%        LazyCompile: ~createAndConnectServer /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:546:32
+      1  100.0%          LazyCompile: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:572:52
+      1  100.0%            /home/raul/.nvm/versions/node/v17.3.0/bin/node
+      1    1.8%      LazyCompile: ~Schema.path /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/lib/schema.js:646:33
+      1  100.0%        LazyCompile: ~add /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/lib/schema.js:480:36
+      1  100.0%          LazyCompile: ~Schema /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/lib/schema.js:90:16
+      1  100.0%            LazyCompile: ~Mongoose.model /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/lib/index.js:461:36
+      1    1.8%      LazyCompile: ~MongoClient /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/mongo_client.js:60:16
+      1  100.0%        LazyCompile: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/lib/connection.js:776:31
+      1  100.0%          /home/raul/.nvm/versions/node/v17.3.0/bin/node
+      1  100.0%            LazyCompile: ~Connection.openUri /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/lib/connection.js:670:40
+      1    1.8%      LazyCompile: ~Long.eq /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/bson/lib/long.js:435:34
+      1  100.0%        LazyCompile: ~Long.negate /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/bson/lib/long.js:612:38
+      1  100.0%          LazyCompile: ~Long.neg /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/bson/lib/long.js:618:35
+      1  100.0%            LazyCompile: ~Long.fromNumber /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/bson/lib/long.js:130:32
+      1    1.8%      LazyCompile: ~File /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/winston/lib/winston/transports/file.js:33:14
+      1  100.0%        Script: ~<anonymous> file:///home/raul/coderhousecourse/github_entregable/Loggers%20Y%20Gzip/utils/logger.js:1:1
+      1  100.0%          /home/raul/.nvm/versions/node/v17.3.0/bin/node
+      1  100.0%            /home/raul/.nvm/versions/node/v17.3.0/bin/node
+      1    1.8%      LazyCompile: ~ClientSession /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/sessions.js:54:16
+      1  100.0%        LazyCompile: ~startSession /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:349:17
+      1  100.0%          LazyCompile: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/operations/execute_operation.js:16:48
+      1  100.0%            LazyCompile: ~maybePromise /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/utils.js:482:22
+      1    1.8%      LazyCompile: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:25:32
+      1  100.0%        LazyCompile: ~<anonymous> node:internal/crypto/random:104:43
+      1  100.0%          LazyCompile: ~onJobDone node:internal/crypto/random:299:19
+      1    1.8%      LazyCompile: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/lib/model.js:1274:23
+      1  100.0%        LazyCompile: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/lib/model.js:4931:15
+      1  100.0%          Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.8%      Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.8%      Function: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/npmlog/lib/log.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:963:33
+      1    1.8%      Function: ~<anonymous> /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/lodash/assignInWith.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1051:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    1.8%      Function: ^normalizeEncoding node:internal/util:160:27
+      1  100.0%        LazyCompile: ~validateEncoding node:internal/validators:199:26
+      1  100.0%          LazyCompile: ~update node:internal/crypto/hash:95:40
+      1  100.0%            LazyCompile: ~HMAC /home/raul/coderhousecourse/github_entregable/Loggers Y Gzip/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:214:14
+     43   39.8%    LazyCompile: *compileFunction node:vm:308:25
+     22   51.2%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1051:37
+     22  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+     22  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+     21   95.5%            Function: ^Module.require node:internal/modules/cjs/loader:991:36
+      1    4.5%            Function: ^<anonymous> node:internal/modules/esm/translators:159:67
+     21   48.8%      Function: ^wrapSafe node:internal/modules/cjs/loader:1011:18
+     21  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+     21  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+     21  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:963:33
+
